@@ -3,6 +3,8 @@ def fizzbuzz(num)
     'fizzbuzz'
   elsif (num % 5).zero?
     'buzz'
+  elsif !(num % 5).zero? && !(num % 3).zero?
+    num
   else
     'fizz'
   end
