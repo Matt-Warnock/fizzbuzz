@@ -1,1 +1,3 @@
-def fizzbuzz; end
+def fizzbuzz(num)
+  'fizz'
+end
