@@ -25,15 +25,13 @@ describe "fizzbuzz" do
     expect(fizzbuzz(15)).to eq "fizzbuzz"
   end
 
-  it "returns number given when passed 1" do
-    expect(fizzbuzz(1)).to eq 1
-  end
+  it "returns integers when not divisable by 3 or 5" do
+    number_array = [1, 2, 4, 7, 8, 11, 13, 14, 16, 17, 19, 22]
 
-  it "returns number given when passed 2" do
-    expect(fizzbuzz(2)).to eq 2
-  end
+    answer_array = number_array.map do |num|
+      fizzbuzz(num)
+    end
 
-  it "returns number given when passed 4" do
-    expect(fizzbuzz(4)).to eq 4
+    expect(answer_array).to eq number_array
   end
 end

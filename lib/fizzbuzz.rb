@@ -1,11 +1,11 @@
 def fizzbuzz(num)
-  if (num % 5).zero? && (num % 3).zero?
-    'fizzbuzz'
-  elsif (num % 5).zero?
+  return 'fizzbuzz' if (num % 5).zero? && (num % 3).zero?
+
+  if (num % 5).zero?
     'buzz'
-  elsif !(num % 5).zero? && !(num % 3).zero?
-    num
-  else
+  elsif (num % 3).zero?
     'fizz'
+  else
+    num
   end
 end
